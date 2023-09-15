@@ -1,7 +1,7 @@
 import './globals.scss';
 
 export const metadata = {
-  title: 'Thread Affair',
+  title: 'Monochrome',
   description: 'A high quality suit ecommerce brand',
 };
 

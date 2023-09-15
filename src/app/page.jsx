@@ -5,8 +5,6 @@ import HeaderSecondary from '@/components/common/HeaderSecondary';
 
 import HomeCatalogPreview from '@/components/home/HomeCatalogPreview';
 import HomeContent from '@/components/home/HomeContent';
-import HomeNewsletter from '@/components/home/HomeNewsletter';
-import Payment from '@/components/home/Payment';
 
 export default function Home() {
   return (
@@ -37,7 +35,6 @@ export default function Home() {
           <HomeCatalogPreview></HomeCatalogPreview>
         </div>
 
-        {/* layout bootstrap style */}
         <div className="container">
           <ul className="row justify-content-between">
             <li className="col-12 col-lg-3 mb-5">
@@ -48,15 +45,16 @@ export default function Home() {
               <ProductTile></ProductTile>
             </li>
 
-            <li className="col-12 col-lg-3">
+            <li className="col-12 col-lg-3 mb-5">
+              <ProductTile></ProductTile>
+            </li>
+
+
+            <li className="col-12 col-lg-3 mb-5">
               <ProductTile></ProductTile>
             </li>
           </ul>
         </div>
-
-        <HomeNewsletter></HomeNewsletter>
-
-        <Payment></Payment>
         </header>
       </main>
 

@@ -1,0 +1,23 @@
+.home-content {
+  display: flex;
+
+  > section > h1 {
+    font-size: 44px;
+    color: $brand-primary;
+    opacity: 1;
+    float: right;
+    width: 78%;
+    padding-bottom: 40px;
+    font: normal normal bold 44px/33px Playfair Display;
+  }
+
+  > section > p {
+    font-size: 22px;
+    letter-spacing: 0.33px;
+    color: $brand-primary;
+    opacity: 1;
+    float: right;
+    width: 78%;
+    font: normal normal 300 22px/43px Roboto;
+  }
+}

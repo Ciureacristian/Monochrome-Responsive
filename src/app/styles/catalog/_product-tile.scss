@@ -1,1 +1,28 @@
+.product-tile > span {
+  text-align: center;
+  font: normal normal bold 22px/34px Playfair Display;
+  letter-spacing: 0px;
+  color: $brand-primary;
+  opacity: 1;
+  margin-bottom: 18px;
+}
 
+.product-tile-title {
+  font-size: 24px;
+  color: $brand-primary;
+  text-align: center;
+  opacity: 1;
+  letter-spacing: 0.79px;
+  margin-top: 21px;
+  margin-bottom: 8px;
+  font: normal normal bold 22px/39px Playfair Display;
+  text-transform: uppercase;
+}
+.product-tile-pricing {
+  font-size: 18px;
+  text-align: center;
+  font: normal normal normal 22px/39px Playfair Display;
+  letter-spacing: 0.79px;
+  color: #2b2b2b;
+  opacity: 1;
+}

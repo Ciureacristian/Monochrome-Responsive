@@ -49,7 +49,14 @@ export default function HeaderSecondary() {
       <ul>
         <li className="header-account">
         <form>
-
+        <input
+                  type="search"
+                  name="search-bar"
+                  class="search-input"
+                  id="search-bar"
+                  placeholder="Search"
+                  required
+                ></input>
             <button type="submit">
               <i className="fa-solid fa-magnifying-glass"></i>
             </button>
@@ -92,3 +99,5 @@ export default function HeaderSecondary() {
 </section>
 </>
 }
+
+

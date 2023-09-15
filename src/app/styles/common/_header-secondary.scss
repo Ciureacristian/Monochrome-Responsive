@@ -1,8 +1,58 @@
 .header-secondary {
-  background: url('/public/banners/banner.png') no-repeat center center / cover;
+  background: url('/public/banners/banner.png') no-repeat center right;
   opacity: 1;
   background-size: cover;
   background-position: center center;
   height: 500px;
   text-transform: uppercase;
+
+  .header-secondary-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+    box-sizing: border-box;
+
+    .header-connect ul {
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 26px;
+      padding-top: 22px;
+
+      li {
+        display: inline-flex;
+        font: normal normal normal Playfair Display;
+        letter-spacing: 0.24px;
+      }
+    }
+
+    .header-controls ul {
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 26px;
+      padding-top: 22px;
+      color: #111111;
+
+      input {
+        font-size: 19px;
+        padding: 8px 6px 8px 6px;
+        border: none;
+      }
+
+      button {
+        font-size: 19px;
+        opacity: 1;
+        background: none;
+        border: none;
+        padding: 8px 10px;
+      }
+
+      form {
+        border: 1px solid $white;
+        display: flex;
+        flex-direction: row-reverse;
+      }
+    }
+  }
 }

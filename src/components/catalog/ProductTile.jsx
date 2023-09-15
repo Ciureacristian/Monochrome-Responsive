@@ -1,6 +1,32 @@
 export default function ProductTile() {
 return<>
 <header className="product-tile-header">
+<ul className="product-tiles">
+          <li>
+            <article className="product-tile">
+
+                <picture className="product-tile-images">
+                  <a
+                    href="/"
+                    title="Monochrome"
+                  >
+                    <picture>
+                    <img
+                      src="./products/recently_viewed_thumbnail_2-2.png"
+                      alt="Monochrome"
+                    ></img>
+                    </picture>
+
+                    </a>
+                </picture>
+                <span className="heart-btn">
+                  <i className="fa-regular fa-heart"></i>
+                  </span>
+
+            </article>
+
+          </li>
+        </ul>
     <h1 className="product-tile-title">
                   <a
                     href=""
@@ -8,12 +34,13 @@ return<>
                   >
                     <span>Monochrome</span></a>
                 </h1>
-              </header>
+
 
               <section className="product-tile-pricing">
                 <span className="product-price">
                   $<span>425</span>
                 </span>
               </section>
+              </header>
 </>
 }

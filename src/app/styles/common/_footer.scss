@@ -1,0 +1,61 @@
+.footer {
+  background-color: #e8e8e8;
+  font-weight: 300;
+  padding-top: 40px;
+  padding-bottom: 53px;
+  font-size: 18px;
+  color: #2b2b2b;
+
+  .footer-inner {
+    display: flex;
+    ul {
+      width: 211px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .footer-nav {
+      display: flex;
+      gap: 202px;
+      font: normal normal normal 22px/37px Playfair Display;
+      letter-spacing: 0.52px;
+      color: $brand-primary;
+      text-transform: lowercase;
+      opacity: 1;
+    }
+  }
+
+  .social-media ul {
+    display: inline-flex;
+    justify-content: space-between;
+    font-size: 22px;
+    opacity: 1;
+    width: 120px;
+  }
+
+  .footer-newsletter {
+    display: block;
+    text-align: left;
+    font: normal normal normal 22px/37px Playfair Display;
+    letter-spacing: 0.33px;
+    color: $brand-primary;
+    text-transform: lowercase;
+    opacity: 1;
+
+    > input {
+      width: 190px;
+      height: 20px;
+    }
+    > button {
+      flex-direction: column;
+      display: block;
+      margin: 18px 0px 33px 0px;
+      text-align: center;
+      font: normal normal normal 22px/36px Roboto;
+      letter-spacing: 0.48px;
+      opacity: 1;
+    }
+  }
+}

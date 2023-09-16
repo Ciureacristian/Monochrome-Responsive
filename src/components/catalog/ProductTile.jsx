@@ -1,27 +1,27 @@
+import Image from 'next/image';
+import product from '../../assets/products/recently_viewed_thumbnail_2-2.png'
+
 export default function ProductTile() {
 return<>
 <header className="product-tile-header">
 <ul className="product-tiles">
           <li>
             <article className="product-tile">
-
                 <picture className="product-tile-images">
                   <a
                     href="/"
                     title="Monochrome"
                   >
-                    <picture>
-                    <img
-                      src="./products/recently_viewed_thumbnail_2-2.png"
-                      alt="Monochrome"
-                    ></img>
-                    </picture>
+                    <Image
+                    src={product}
+                    alt="Oliver Prcker"
+                    />
 
                     </a>
                 </picture>
                 <span className="heart-btn">
                   <i className="fa-regular fa-heart"></i>
-                  </span>
+                </span>
 
             </article>
 

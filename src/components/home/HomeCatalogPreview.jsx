@@ -1,3 +1,4 @@
+
 import CatalogPreview from "../catalog/CatalogPreview"
 
 export default function HomeCatalogPreview() {

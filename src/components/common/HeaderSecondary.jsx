@@ -52,7 +52,7 @@ export default function HeaderSecondary() {
         <input
                   type="search"
                   name="search-bar"
-                  class="search-input"
+                  className="search-input"
                   id="search-bar"
                   placeholder="Search"
                   required

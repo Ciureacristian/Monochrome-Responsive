@@ -1,16 +1,18 @@
+import Image from 'next/image';
+import oliver from '../../assets/banners/oliver-pecker.png'
+
 export default function HomeContent() {
+  console.log('oliver', oliver)
 return<>
 <section className="home-content">
         <aside>
-          <picture>
-          <img
-            src="./public/banners/oliver-pecker-HONJP8DyiSM-unsplash.png"
+          <Image
+            src={oliver}
             alt="Oliver Prcker"
-          ></img>
-            </picture>
+          />
         </aside>
 
-        <section class="story">
+        <section className="story">
           <h1>Watches for entrepreneurs</h1>
 
           <p>

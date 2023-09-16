@@ -1,7 +1,7 @@
 export default function HeaderPrimary() {
 return <>
-<section class="header-primary">
-    <nav class="header-primary-inner container">
+<section className="header-primary">
+    <nav className="header-primary-inner container">
       <ul>
         <li>
           <a

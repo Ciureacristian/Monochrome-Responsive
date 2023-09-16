@@ -4,6 +4,9 @@ import HeaderPrimary from '@/components/common/HeaderPrimary';
 import HeaderSecondary from '@/components/common/HeaderSecondary';
 
 import HomeCatalogPreview from '@/components/home/HomeCatalogPreview';
+import HomeCatalogPreview2 from '@/components/home/HomeCatalogPreview2';
+import HomeCatalogPreviewGirl from '@/components/home/HomeCatalogPreviewGirl';
+import HomeCatalogPreviewMen from '@/components/home/HomeCatalogPreviewMen';
 import HomeContent from '@/components/home/HomeContent';
 
 export default function Home() {
@@ -20,7 +23,7 @@ export default function Home() {
       <main className="content">
         <header className='home-catalog-preview container'>
         <section className='home-catalog-preview'>
-          <HomeCatalogPreview></HomeCatalogPreview>
+          <HomeCatalogPreview2></HomeCatalogPreview2>
         </section>
 
         <div className="home-content">
@@ -32,28 +35,11 @@ export default function Home() {
         </div>
 
         <div className="home-catalog-preview">
-          <HomeCatalogPreview></HomeCatalogPreview>
+          <HomeCatalogPreviewMen></HomeCatalogPreviewMen>
         </div>
 
-        <div className="container">
-          <ul className="row justify-content-between">
-            <li className="col-12 col-lg-3 mb-5">
-              <ProductTile></ProductTile>
-            </li>
-
-            <li className="col-12 col-lg-3 mb-5">
-              <ProductTile></ProductTile>
-            </li>
-
-            <li className="col-12 col-lg-3 mb-5">
-              <ProductTile></ProductTile>
-            </li>
-
-
-            <li className="col-12 col-lg-3 mb-5">
-              <ProductTile></ProductTile>
-            </li>
-          </ul>
+        <div className="home-catalog-preview">
+          <HomeCatalogPreviewGirl></HomeCatalogPreviewGirl>
         </div>
         </header>
       </main>

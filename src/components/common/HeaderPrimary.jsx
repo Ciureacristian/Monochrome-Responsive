@@ -1,3 +1,5 @@
+import PageMan from "../Mens/PageMan";
+
 export default function HeaderPrimary() {
 return <>
 <section className="header-primary">
@@ -23,7 +25,7 @@ return <>
 
         <li>
           <a
-            href="men's.html"
+            href="/"
             title="Men's"
           >Mens</a>
         </li>

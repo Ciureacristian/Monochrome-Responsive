@@ -8,5 +8,12 @@ return<>
         </header>
       </section>
       <CatalogPreview></CatalogPreview>
+      <header class="button-ctas">
+          <ul class="product-tiles">
+            <footer class="catalog-ctas">
+              <a href="">View all</a>
+            </footer>
+          </ul>
+        </header>
 </>
 }

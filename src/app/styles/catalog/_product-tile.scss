@@ -1,3 +1,21 @@
+.product-tile {
+  position: relative;
+}
+
+.heart-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 22px;
+  opacity: 1;
+}
+
+.heart-btn:hover {
+  color: #ff6b6b;
+  transition: color 0.2s linear;
+}
+
 .product-tile > span {
   text-align: center;
   font: normal normal bold 22px/34px Playfair Display;

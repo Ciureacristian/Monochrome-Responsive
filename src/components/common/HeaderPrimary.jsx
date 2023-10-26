@@ -1,5 +1,4 @@
-import PageMan from "../Mens/PageMan";
-
+import Link from 'next/link';
 export default function HeaderPrimary() {
 return <>
 <section className="header-primary">
@@ -24,10 +23,9 @@ return <>
         </li>
 
         <li>
-          <a
-            href="/"
-            title="Men's"
-          >Mens</a>
+        <Link href="/men" title="Men">
+            Men
+        </Link>
         </li>
 
         <li>

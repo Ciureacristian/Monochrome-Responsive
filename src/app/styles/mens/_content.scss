@@ -1,0 +1,65 @@
+.home-catalog-preview-tile > span {
+  text-align: center;
+  font: normal normal bold 35px/47px Playfair Display;
+  letter-spacing: 0px;
+  color: $brand-primary;
+  opacity: 1;
+  margin-bottom: 18px;
+}
+
+.home-catalog-preview-tile > p {
+  text-align: left;
+  font: normal normal 300 25px/33px Roboto;
+  letter-spacing: 1px;
+  color: $gray-primary;
+  opacity: 1;
+  padding-top: 18px;
+  padding-bottom: 42px;
+}
+
+.home-catalog-preview-btn {
+  display: flex;
+  background-color: $white;
+  box-sizing: border-box;
+  justify-content: space-between;
+
+  .button-ctas-men {
+    background: #2b2b2b 0% 0% no-repeat padding-box;
+    display: inline-block;
+    border: 1px solid rgb(43, 43, 43);
+    opacity: 1;
+    letter-spacing: 0.88px;
+    padding: 6px 6px;
+    margin-bottom: 94px;
+
+    a {
+      text-align: center;
+      font: normal normal bold 16px/37px Playfair Display;
+      letter-spacing: 0.24px;
+      color: $white;
+      text-transform: uppercase;
+      opacity: 1;
+      padding: 0px 33px;
+    }
+  }
+}
+
+.product-tile .catalog-ctas-white {
+  background: $white 0% 0% no-repeat padding-box;
+  display: inline-block;
+  border: 1px solid $brand-tertiary;
+  opacity: 1;
+  letter-spacing: 0.88px;
+  padding: 6px 6px;
+  cursor: pointer;
+
+  a {
+    text-align: center;
+    font: normal normal bold 16px/37px Playfair Display;
+    letter-spacing: 0.24px;
+    color: $brand-primary;
+    text-transform: uppercase;
+    opacity: 1;
+    padding: 0px 33px;
+  }
+}

@@ -1,0 +1,38 @@
+.product-tile-header {
+  position: relative;
+
+  .heart-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 22px;
+    opacity: 1;
+
+    .heart-btn:hover {
+      color: $gray-secondary;
+      transition: color 0.2s linear;
+    }
+  }
+}
+
+.home-catalog-preview {
+  .product-tiles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 42px;
+
+    .product-tile {
+      font-size: 24px;
+      color: #2b2b2b;
+      text-align: center;
+      opacity: 1;
+      letter-spacing: 0.79px;
+      margin-top: 21px;
+      margin-bottom: 8px;
+      font: normal normal bold 22px/39px Playfair Display;
+      text-transform: uppercase;
+      margin-right: 24px;
+    }
+  }
+}

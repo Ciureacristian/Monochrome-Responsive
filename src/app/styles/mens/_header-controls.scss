@@ -1,0 +1,52 @@
+.header-controls input {
+  font-size: 19px;
+  padding: 8px 6px 8px 6px;
+  border: none;
+}
+
+.header-controls button {
+  font-size: 19px;
+  opacity: 1;
+  background: none;
+  border: none;
+  padding: 8px 10px;
+}
+
+.header-controls form {
+  border: 1px solid $brand-tertiary;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.header-controls ul {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 26px;
+  padding-top: 22px;
+  color: #111111;
+}
+
+.search {
+  display: inline-block;
+  position: relative;
+  color: #aaa;
+  font-size: 16px;
+
+  input {
+    width: 250px;
+    height: 32px;
+    background: #fcfcfc;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+    margin-top: -15px;
+    text-indent: 32px;
+  }
+
+  .fa-search {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+}

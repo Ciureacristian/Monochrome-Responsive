@@ -8,7 +8,6 @@
 @import './../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
 @import './../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
 
-
 // import via node_Modules ~ alias
 // ./.../node_modules/bootstrap/
 @import '~bootstrap/scss/bootstrap-reboot';
@@ -28,6 +27,9 @@
 
 // catalog components
 @import './styles/catalog/index';
+
+//mens components
+@import './styles/mens/index';
 
 body {
   font-size: 16px;

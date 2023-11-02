@@ -1,4 +1,3 @@
-import HeaderPrimary from "@/components/common/HeaderPrimary";
 import MenPage from "./MenPage";
 import Footer from "@/components/common/Footer";
 import CatalogMen from "./CatalogMen";

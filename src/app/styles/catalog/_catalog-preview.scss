@@ -10,11 +10,6 @@
     opacity: 1;
   }
 }
-.home-catalog-product {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 42px;
-}
 
 .button-ctas {
   color: $brand-primary;
@@ -24,14 +19,22 @@
   color: #2b2b2b;
   opacity: 1;
   padding-bottom: 98px;
+}
 
-  .product-tiles {
-    background: $white 0% 0% no-repeat padding-box;
-    display: inline-block;
-    border: 1px solid $brand-primary;
-    opacity: 1;
-    letter-spacing: 0.88px;
-    padding: 6px 6px;
-    cursor: pointer;
-  }
+.home-catalog-product {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 42px;
+}
+
+.catalog-ctas > a {
+  display: inline-block;
+  align-items: center;
+  border: 1px solid #2b2b2b;
+  opacity: 1;
+  background: #fff;
+  font: normal normal normal 22px/22px Roboto;
+  letter-spacing: 0.88px;
+  padding: 12px 6px;
+  font-size: 16px;
 }

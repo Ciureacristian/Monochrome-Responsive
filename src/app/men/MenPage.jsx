@@ -1,5 +1,5 @@
-
-
+import Link from "next/link"
+import ProductsDescription from "../products/ProductsDescription";
 export default function MenPage () {
   return<>
   <main className="content">
@@ -14,7 +14,7 @@ export default function MenPage () {
         <header className="button-ctas-men">
           <ul className="product-tile">
             <footer className="catalog-ctas-men">
-              <a href="">BESTSELLERS</a>
+            <Link href="/products" title="Product">BESTSELLER</Link>
             </footer>
           </ul>
         </header>

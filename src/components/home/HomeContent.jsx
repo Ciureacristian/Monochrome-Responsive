@@ -2,7 +2,6 @@ import Image from 'next/image';
 import oliver from '../../assets/banners/oliver-pecker.png'
 
 export default function HomeContent() {
-  console.log('oliver', oliver)
 return<>
 <section className="home-content">
         <aside>

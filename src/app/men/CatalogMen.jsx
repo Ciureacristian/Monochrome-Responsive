@@ -7,8 +7,6 @@ import product4 from './../../assets/products/recently_viewed_thumbnail_2-4.png'
 export default function CatalogMen() {
 return<>
  <section className="home-catalog-preview container">
-
-
 <ul className="product-tiles">
   <li>
     <article className="product-tile">

@@ -9,6 +9,8 @@ import HomeContent from '@/components/home/HomeContent';
 
 export default function Home() {
   return (
+
+
     <div className="home">
       <header className='header-secondary'>
       <HeaderSecondary></HeaderSecondary>

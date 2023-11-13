@@ -1,9 +1,10 @@
-import Footer from "@/components/common/Footer";
-import MenPage from "../men/MenPage";
+import Footer from '@/components/common/Footer';
 
-export default function products() {
-  return<>
-  <header className="header-men">
+
+export default function Home() {
+  return (
+    <div className="home">
+<header className="header-men">
 
 <div class="title-primary">
   MONOCHROME
@@ -166,6 +167,14 @@ export default function products() {
 </div>
 </header>
 
-  </> ;
-};
+<nav>
+  asdsa
+</nav>
 
+
+      <footer className="footer">
+        <Footer></Footer>
+      </footer>
+    </div>
+  );
+}

@@ -7,8 +7,13 @@
     opacity: 1;
     float: right;
     width: 78%;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     font: normal normal bold 44px/33px Playfair Display;
+
+    @media (max-width: 600px) {
+      font-size: 28px;
+      width: 100%;
+    }
   }
 
   > section > p {
@@ -19,5 +24,10 @@
     float: right;
     width: 78%;
     font: normal normal 300 22px/43px Roboto;
+
+    @media (max-width: 600px) {
+      font-size: 18px;
+      width: 100%;
+    }
   }
 }

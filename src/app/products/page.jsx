@@ -1,4 +1,6 @@
 import Footer from '@/components/common/Footer';
+import CatalogMen from '../men/CatalogMen';
+import ProductPage from './productsPage';
 
 
 export default function Home() {
@@ -167,9 +169,20 @@ export default function Home() {
 </div>
 </header>
 
-<nav>
-  asdsa
-</nav>
+<main className='catalog-product-inner container'>
+  <ProductPage></ProductPage>
+
+</main>
+
+<div className='content container'>
+  <p>You may also like</p>
+<CatalogMen></CatalogMen>
+</div>
+
+<div className='content container'>
+  <p>Recently view</p>
+  <CatalogMen></CatalogMen>
+</div>
 
 
       <footer className="footer">

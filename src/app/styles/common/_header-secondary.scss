@@ -9,49 +9,71 @@
   .header-secondary-inner {
     display: flex;
     justify-content: space-between;
-    padding: 0 150px;
+    padding: 0 20px; // Redu padding-ul pentru dispozitivele mobile
     box-sizing: border-box;
 
-    .header-connect ul {
-      display: inline-flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 26px;
-      padding-top: 22px;
+    .header-connect,
+    .header-controls {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 26px;
+        padding-top: 22px;
 
-      li {
-        display: inline-flex;
-        font: normal normal normal Playfair Display;
-        letter-spacing: 0.24px;
+        li {
+          font: normal normal normal Playfair Display;
+          letter-spacing: 0.24px;
+        }
       }
     }
 
-    .header-controls ul {
-      display: inline-flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 26px;
-      padding-top: 22px;
-      color: #111111;
+    .header-controls {
+      ul {
+        color: #111111;
 
-      input {
-        font-size: 19px;
-        padding: 8px 6px 8px 6px;
-        border: none;
+        input,
+        button {
+          font-size: 16px;
+        }
+
+        input {
+          padding: 8px 6px;
+        }
+
+        button {
+          padding: 8px 10px;
+        }
+
+        form {
+          border: 1px solid $white;
+          display: flex;
+          flex-direction: row-reverse;
+        }
       }
+    }
+  }
 
-      button {
-        font-size: 19px;
-        opacity: 1;
-        background: none;
-        border: none;
-        padding: 8px 10px;
-      }
+  @media (max-width: 600px) {
+    background-image: url('../../../assets/banners/mobile.png');
+    background-position: center top;
+    height: 350px;
+    padding: 0;
 
-      form {
-        border: 1px solid $white;
-        display: flex;
-        flex-direction: row-reverse;
+    .header-secondary-inner {
+      flex-direction: column;
+
+      .header-connect,
+      .header-controls {
+        ul {
+          flex-direction: column;
+          align-items: center;
+          padding-top: 10px;
+
+          li {
+            margin-bottom: 10px;
+          }
+        }
       }
     }
   }

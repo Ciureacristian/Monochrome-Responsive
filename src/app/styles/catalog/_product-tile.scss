@@ -44,3 +44,19 @@
   color: #2b2b2b;
   opacity: 1;
 }
+
+@media (max-width: 600px) {
+  .product-tile-title {
+    font-size: 18px;
+  }
+
+  .product-tile-pricing {
+    font-size: 16px;
+  }
+
+  .heart-btn {
+    font-size: 18px;
+    top: 10px;
+    right: 10px;
+  }
+}

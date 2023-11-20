@@ -45,7 +45,7 @@
   opacity: 1;
 }
 
-@media (max-width: 600px) {
+@include media-breakpoint-up(lg) {
   .product-tile-title {
     font-size: 18px;
   }

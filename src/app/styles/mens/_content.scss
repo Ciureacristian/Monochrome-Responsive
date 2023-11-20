@@ -66,3 +66,10 @@
     padding: 0px 33px;
   }
 }
+@media (max-width: 600px) {
+  .home-catalog-preview-tile {
+    .home-catalog-preview-btn > ul {
+      flex-direction: column;
+    }
+  }
+}

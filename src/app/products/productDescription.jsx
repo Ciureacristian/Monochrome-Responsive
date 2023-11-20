@@ -1,41 +1,73 @@
-import FooterDescription from "./footerDescription";
+import FooterDescription from './footerDescription';
 
-export default function ProductDescription () {
+export default function ProductDescription() {
+  return (
+    <>
+      <nav className="product-detail-view">
+        <header className="product-detail-header">
+          <h1 className="product-header">Monochrome Max Bill - $725</h1>
+        </header>
 
+        <section className="product-description">
+          <h1>
+            <a href="/" title="Description" className="product-desc">
+              description <i class="fa-solid fa-minus"></i>
+            </a>
+          </h1>
 
-return<>
-<header className="product-detail-header">
-    <h1>Monochrome Max Bill - $725</h1>
-  </header>
+          <p>
+            Mr Max Bill was a true creative genius, carving out a career as a
+            painter, architect, sculptor and designer. As well as leaving behind
+            an expansive body of work, he was also an avid collector of watches,
+            and this Junghans chronoscope timepiece is dedicated to his memory.
+            Immaculately housed in a domed Plexiglass case and finished with a
+            handsome leather strap, it s a highly technical piece in a stylish
+            package.
+          </p>
+        </section>
 
-<nav className="product-detail-view">
-<section className="product-description">
-  <h1>description</h1>
+        <section className="product-fit">
+          <h1>
+            <a href="/" title="fit">
+              size & fit <i class="fa-solid fa-plus"></i>
+            </a>
+          </h1>
+        </section>
 
-  <p>
-    Mr Max Bill was a true creative genius, carving out a career as a painter, architect, sculptor and designer.
-    As well as leaving behind an expansive body of work, he was also an avid collector of watches, and this Junghans
-    chronoscope timepiece is dedicated to his memory. Immaculately housed in a domed Plexiglass case and finished with
-    a handsome leather strap, it s a highly technical piece in a stylish package.</p>
-</section>
-<section className="product-fit">
-  <h1>size & fit</h1>
-</section>
-<section className="product-details">
-  <h1>details & care</h1>
-</section>
-<section className="product-delivery">
-  <h1>delivery & returns</h1>
-</section>
+        <section className="product-details">
+          <h1>
+            <a href="/" title="fit">
+              details & care <i class="fa-solid fa-plus"></i>
+            </a>
+          </h1>
+        </section>
 
-<section className="product-cta">
-<button type="submit" name="ADDBAG" className="add-bag" id="add-bag"><i class="fa-solid fa-bag-shopping">ADD TO BAG</i></button>
-<button type="submit" name="whishlist" className="add-whislist" id="add-whishlist"><i class="fa-solid fa-heart">WHISHLIST</i></button>
-</section>
-</nav>
+        <section className="product-delivery">
+          <h1>
+            <a href="/" title="fit">
+              delivery & returns <i class="fa-solid fa-plus"></i>
+            </a>
+          </h1>
+        </section>
 
-<footer className="product-detail-footer">
-  <FooterDescription></FooterDescription>
-</footer>
-</>
+        <section className="product-cta">
+          <button type="submit" name="ADDBAG" className="add-bag" id="add-bag">
+            <i class="fa-solid fa-bag-shopping">ADD TO BAG</i>
+          </button>
+
+          <button
+            type="submit"
+            name="whishlist"
+            className="add-whislist"
+            id="add-whishlist"
+          >
+            <i class="fa-solid fa-heart">WHISHLIST</i>
+          </button>
+        </section>
+        <footer className="product-detail-footer">
+          <FooterDescription></FooterDescription>
+        </footer>
+      </nav>
+    </>
+  );
 }

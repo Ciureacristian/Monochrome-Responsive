@@ -10,26 +10,26 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
 
-    ul {
-      width: 211px;
-      margin-bottom: 0;
-    }
+  ul {
+    width: 211px;
+    margin-bottom: 0;
+  }
 
-    li {
-      margin-bottom: 8px;
-    }
+  li {
+    margin-bottom: 8px;
+  }
 
-    .footer-nav {
-      display: flex;
-      gap: 202px;
-      font: normal normal normal 22px/37px Playfair Display;
-      letter-spacing: 0.52px;
-      color: $brand-primary;
-      text-transform: lowercase;
-      opacity: 1;
-      flex-basis: 40%;
-    }
+  .footer-nav {
+    display: flex;
+    gap: 20px;
+    font: normal normal normal 22px/37px Playfair Display;
+    letter-spacing: 0.52px;
+    color: $brand-primary;
+    text-transform: lowercase;
+    opacity: 1;
+    flex-basis: 100%;
   }
 
   .social-media ul {
@@ -37,7 +37,7 @@
     justify-content: space-between;
     font-size: 22px;
     opacity: 1;
-    width: 120px;
+    width: 100%;
     margin-bottom: 20px;
   }
 
@@ -48,13 +48,17 @@
     text-align: center;
     margin-bottom: 20px;
 
-    > input {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-
+    > input,
     > button {
       width: 100%;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .footer-nav,
+    .social-media ul,
+    .footer-newsletter {
+      flex-basis: 40%;
     }
   }
 }

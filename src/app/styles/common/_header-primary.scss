@@ -56,11 +56,15 @@
   @media (max-width: 600px) {
     .header-primary-inner {
       ul {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        display: flex;
+        text-transform: uppercase;
+        font-size: 20px;
+        justify-content: space-between;
 
         li {
-          margin: 10px 0;
+          margin: 0;
 
           a {
             &::after {

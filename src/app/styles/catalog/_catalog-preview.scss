@@ -39,7 +39,7 @@
   font-size: 16px;
 }
 
-@media (max-width: 600px) {
+@include media-breakpoint-up(lg) {
   .home-catalog-preview .tile-catalog-preview {
     padding: 15px;
     font-size: 22px;

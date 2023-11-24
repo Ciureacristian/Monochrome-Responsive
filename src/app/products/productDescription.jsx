@@ -52,7 +52,7 @@ export default function ProductDescription() {
 
         <section className="product-cta">
           <button type="submit" name="ADDBAG" className="add-bag" id="add-bag">
-            <i class="fa-solid fa-bag-shopping">ADD TO BAG</i>
+            <i class="fa-solid fa-bag-shopping"></i>ADD TO BAG
           </button>
 
           <button
@@ -61,10 +61,10 @@ export default function ProductDescription() {
             className="add-whislist"
             id="add-whishlist"
           >
-            <i class="fa-solid fa-heart">WHISHLIST</i>
+            <i class="fa-solid fa-heart"></i>WHISHLIST
           </button>
         </section>
-        <footer className="product-detail-footer">
+        <footer className="product-details-footer">
           <FooterDescription></FooterDescription>
         </footer>
       </nav>

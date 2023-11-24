@@ -53,23 +53,22 @@
     }
   }
 
-  @media (max-width: 600px) {
+  // Media query for mobile
+  @media (max-width: 768px) {
     .header-primary-inner {
       ul {
-        flex-direction: row;
-        align-items: center;
-        display: flex;
-        text-transform: uppercase;
-        font-size: 20px;
-        justify-content: space-between;
+        display: none; // Hide the navigation links
 
         li {
-          margin: 0;
+          display: block;
+          margin-bottom: 10px;
 
           a {
-            &::after {
-              width: 0;
-            }
+            display: block;
+            padding: 10px;
+            background-color: $brand-primary;
+            color: $gray-secondary;
+            text-decoration: none;
           }
         }
       }

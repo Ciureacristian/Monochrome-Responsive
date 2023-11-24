@@ -49,13 +49,13 @@
     .image-list li {
       flex: 0 0 auto;
       margin-right: 10px;
-      background-color: #2b2b2b;
-      border: 1px solid #2b2b2b;
+      background-color: $brand-primary;
+      border: 1px solid $brand-primary;
       padding: 0 12px 0 0;
       height: auto;
       width: auto;
       white-space: nowrap;
-      color: #fff;
+      color: $white;
       transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     }
   }

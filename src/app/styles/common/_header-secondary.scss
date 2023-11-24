@@ -54,7 +54,7 @@
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     background-image: url('../../../assets/banners/mobile.png');
     background-position: center top;
     height: 350px;
@@ -62,9 +62,14 @@
 
     .header-secondary-inner {
       flex-direction: column;
+      align-items: center;
 
-      .header-connect,
+      .header-connect {
+        display: none;
+      }
       .header-controls {
+        width: 100%;
+        margin-bottom: 20px;
         ul {
           display: flex;
           justify-content: space-between;
@@ -74,6 +79,13 @@
           li {
             margin-bottom: 10px;
           }
+        }
+        .search-input {
+          width: 100%;
+        }
+
+        form {
+          flex-direction: column;
         }
       }
     }

@@ -50,16 +50,16 @@
     left: 10px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .header-controls {
     ul {
-      flex-direction: row; // Schimbă din nou direcția listei pentru ecranele mici
+      flex-direction: row;
     }
   }
 
   .search {
     input {
-      width: 100%; // Lățime 100% pentru a se potrivi pe ecrane mici
+      width: 100%;
     }
   }
 }

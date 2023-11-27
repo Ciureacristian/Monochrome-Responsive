@@ -30,3 +30,17 @@
     }
   }
 }
+@media (min-width: 768px) {
+  .header-secondary-men {
+    flex-direction: row; /* Revert to horizontal layout on larger screens */
+    justify-content: space-between;
+  }
+
+  .header-connect ul {
+    flex-direction: row; /* Revert to horizontal layout on larger screens */
+    align-items: center;
+    gap: 26px;
+    padding-top: 22px;
+    margin-bottom: 82px;
+  }
+}

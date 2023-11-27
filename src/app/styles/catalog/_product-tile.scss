@@ -1,5 +1,12 @@
 .product-tile {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-tile-images {
+  position: relative;
 }
 
 .heart-btn {
@@ -16,26 +23,18 @@
   transition: color 0.2s linear;
 }
 
-.product-tile > span {
-  text-align: center;
-  font: normal normal bold 22px/34px Playfair Display;
-  letter-spacing: 0px;
-  color: $brand-primary;
-  opacity: 1;
-  margin-bottom: 18px;
-}
-
 .product-tile-title {
   font-size: 24px;
   color: $brand-primary;
   text-align: center;
   opacity: 1;
   letter-spacing: 0.79px;
-  margin-top: 21px;
+  margin-top: 8px;
   margin-bottom: 8px;
   font: normal normal bold 22px/39px Playfair Display;
   text-transform: uppercase;
 }
+
 .product-tile-pricing {
   font-size: 18px;
   text-align: center;
@@ -45,18 +44,45 @@
   opacity: 1;
 }
 
-@include media-breakpoint-up(lg) {
+@media (max-width: 768px) {
+  .product-tile-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .product-tile-images {
+    grid-column: span 2;
+    width: 100%;
+  }
+  .product-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .product-tile-title {
-    font-size: 18px;
+    margin-top: 16px;
+    text-align: center;
   }
-
   .product-tile-pricing {
-    font-size: 16px;
-  }
-
-  .heart-btn {
-    font-size: 18px;
-    top: 10px;
-    right: 10px;
+    text-align: center;
   }
 }
+// .product-tiles {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+// }
+
+// .product-tile {
+//   width: 48%; /* Set the width of each product tile to 48% to display two per row */
+//   box-sizing: border-box; /* Include padding and border in the element's total width and height */
+// }
+
+// /* Media query for smaller screens (e.g., mobile) */
+// @media only screen and (max-width: 768px) {
+//   .product-tile {
+//     width: 100%; /* Set the width to 100% for a single column on smaller screens */
+//   }
+// }

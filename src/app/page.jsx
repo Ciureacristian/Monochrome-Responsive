@@ -35,8 +35,6 @@ export default function Home() {
           <div className="home-catalog-preview">
             <HomeCatalogPreviewMen></HomeCatalogPreviewMen>
           </div>
-
-          <div className="home-catalog-preview"></div>
         </header>
       </main>
 

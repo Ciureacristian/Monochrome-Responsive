@@ -10,7 +10,7 @@ export default function HomeCatalogPreviewMen() {
       <header className="button-ctas">
         <ul className="product-tiles">
           <footer className="catalog-ctas">
-            <a href="">View all</a>
+            <a href="/">View all</a>
           </footer>
         </ul>
       </header>

@@ -39,22 +39,22 @@
   font-size: 16px;
 }
 
-@include media-breakpoint-up(lg) {
-  .home-catalog-preview .tile-catalog-preview {
-    padding: 15px;
-    font-size: 22px;
+@media (max-width: 768px) {
+  .home-catalog-product {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tile-catalog-preview {
+    margin-top: 0;
   }
 
   .button-ctas {
     padding-bottom: 24px;
   }
 
-  .home-catalog-product {
-    margin-bottom: 12px;
-  }
-
   .catalog-ctas > a {
-    padding: 8px 6px;
     font-size: 14px;
+    padding: 8px 4px;
   }
 }

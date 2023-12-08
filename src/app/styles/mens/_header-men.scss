@@ -32,12 +32,12 @@
 }
 @media (min-width: 768px) {
   .header-secondary-men {
-    flex-direction: row; /* Revert to horizontal layout on larger screens */
+    flex-direction: row;
     justify-content: space-between;
   }
 
   .header-connect ul {
-    flex-direction: row; /* Revert to horizontal layout on larger screens */
+    flex-direction: row;
     align-items: center;
     gap: 26px;
     padding-top: 22px;

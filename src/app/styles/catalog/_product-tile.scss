@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .product-tile-images {
@@ -59,6 +60,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .product-tile-title {
@@ -69,20 +71,8 @@
     text-align: center;
   }
 }
-// .product-tiles {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: space-between;
-// }
-
-// .product-tile {
-//   width: 48%; /* Set the width of each product tile to 48% to display two per row */
-//   box-sizing: border-box; /* Include padding and border in the element's total width and height */
-// }
-
-// /* Media query for smaller screens (e.g., mobile) */
-// @media only screen and (max-width: 768px) {
-//   .product-tile {
-//     width: 100%; /* Set the width to 100% for a single column on smaller screens */
-//   }
-// }
+.product-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

@@ -9,8 +9,12 @@ export default function HomeCatalogPreviewGirl() {
       <CatalogPreview></CatalogPreview>
       <header className="button-ctas">
         <ul className="product-tiles">
-          <footer className="catalog-ctas">
-            <a href="">View all</a>
+          <footer className="footer-button">
+            <nav>
+              <a href="" title="view all" class="catalog-cta">
+                view all
+              </a>
+            </nav>
           </footer>
         </ul>
       </header>

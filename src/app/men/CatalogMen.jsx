@@ -8,7 +8,7 @@ export default function CatalogMen() {
   return (
     <>
       <section className="home-catalog-preview container">
-        <ul className="product-tiles">
+        <ul className="product-tiles-men">
           <li>
             <article className="product-tile">
               <header className="product-tile-header">

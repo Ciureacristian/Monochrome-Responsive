@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+.product-tiles-men {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .product-tile-images {
   position: relative;
 }

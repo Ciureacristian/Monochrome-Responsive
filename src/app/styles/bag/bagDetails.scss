@@ -1,0 +1,137 @@
+.bag .container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.bag-header {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font: normal normal bold 25px/18px Playfair Display;
+  letter-spacing: 1px;
+  color: $brand-primary;
+  text-transform: uppercase;
+  opacity: 1;
+  margin-top: 32px;
+}
+
+.details-products {
+  color: $brand-primary;
+  text-align: left;
+  font: normal normal normal 18px/16px Playfair Display;
+  letter-spacing: 0.27px;
+  text-transform: uppercase;
+  opacity: 1;
+  border-top: 1px solid $gray;
+  margin-top: 22px;
+  border-bottom: 1px solid $gray;
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 16px 0;
+  }
+}
+
+.product-order {
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  margin-top: 22px;
+}
+
+.bag-images {
+  img {
+    width: 100%;
+    color: transparent;
+    height: 100%;
+  }
+}
+
+.bag-description {
+  display: grid;
+  grid-row-gap: 24px;
+  row-gap: 24px;
+  text-align: center;
+  span {
+    text-align: center;
+    font: normal normal bold 18px/16px Playfair Display;
+    letter-spacing: 0.09px;
+    color: $brand-primary;
+    opacity: 1;
+    font-size: 16px;
+  }
+
+  p {
+    text-align: center;
+    font: normal normal normal 15px/16px Roboto;
+    letter-spacing: 0.07px;
+    color: $brand-primary;
+    opacity: 1;
+    font-size: 10px;
+  }
+}
+
+.bag-color {
+  text-align: center;
+  font: normal normal bold 18px/16px Playfair Display;
+  letter-spacing: 0.09px;
+  color: $brand-primary;
+  opacity: 1;
+
+  p {
+    text-align: center;
+    font: normal normal normal 15px/16px Roboto;
+    letter-spacing: 0.07px;
+    color: $brand-primary;
+    opacity: 1;
+    font-size: 16px;
+  }
+}
+
+.bag-quantity {
+  background: $white 0% 0% no-repeat padding-box;
+  border: 1px solid $brand-primary;
+  opacity: 1;
+  align-self: center;
+  justify-self: center;
+
+  .button-quantity {
+    padding: 6px 14px;
+    border: 1px solid $brand-primary;
+    text-align: center;
+  }
+
+  input {
+    padding: 3px 0;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+  }
+}
+
+.bad-price {
+  text-align: right;
+  font: normal normal bold 25px/25px Playfair Display;
+  letter-spacing: 0.13px;
+  color: $brand-primary;
+  opacity: 1;
+}
+
+.bag-controls {
+  grid-column: 1 / span 5;
+  justify-self: end;
+  text-align: center;
+  font: normal normal normal 12px/20px Roboto;
+  letter-spacing: 0.48px;
+  color: $brand-primary;
+  opacity: 1;
+
+  .btn-small {
+    border: 1px solid $brand-primary;
+    margin-right: 12px;
+    padding: 4px 12px;
+  }
+}

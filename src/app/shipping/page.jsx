@@ -1,8 +1,9 @@
-import MenPage from './MenPage';
 import Footer from '@/components/common/Footer';
-import CatalogMen from './CatalogMen';
-import Link from 'next/link';
-export default function Page() {
+import PaymentSign from '../singIn/payment';
+import ShippingInfo from './shippingInfo';
+import ShippingDetails from './shippingDetails';
+
+export default function Bag() {
   return (
     <>
       <header className="header-men">
@@ -78,9 +79,9 @@ export default function Page() {
                 </li>
 
                 <li>
-                  <Link href="/bag" title="Bag">
+                  <a href="/" title="Add to cart">
                     <i className="fa-sharp fa-solid fa-bag-shopping"></i>
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </section>
@@ -133,37 +134,32 @@ export default function Page() {
           </nav>
         </div>
       </header>
-      <div className="MenPage">
-        <MenPage></MenPage>
-      </div>
 
-      <div className="CatalogMen">
-        <CatalogMen></CatalogMen>
-      </div>
+      <main className="content container">
+        <section>
+          <header className="bag-header">
+            <h1>Shipping</h1>
+          </header>
 
-      <div className="CatalogMen">
-        <CatalogMen></CatalogMen>
-      </div>
+          <section className="payment-sing">
+            <PaymentSign></PaymentSign>
+          </section>
 
-      <div className="CatalogMen">
-        <CatalogMen></CatalogMen>
-      </div>
+          <section className="shipping-total">
+            <section className="shipping-info">
+              <ShippingInfo></ShippingInfo>
+            </section>
 
-      <div className="CatalogMen">
-        <CatalogMen></CatalogMen>
-      </div>
+            <article className="shipping-details">
+              <ShippingDetails></ShippingDetails>
+            </article>
+          </section>
+        </section>
+      </main>
 
-      <div className="CatalogMen">
-        <CatalogMen></CatalogMen>
-      </div>
-
-      <div className="CatalogMen">
-        <CatalogMen></CatalogMen>
-      </div>
-
-      <div className="footer">
+      <footer className="footer">
         <Footer></Footer>
-      </div>
+      </footer>
     </>
   );
 }

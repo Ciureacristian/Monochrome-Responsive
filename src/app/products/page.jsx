@@ -1,6 +1,7 @@
 import Footer from '@/components/common/Footer';
 import CatalogMen from '../men/CatalogMen';
 import ProductPage from './productsPage';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -78,9 +79,9 @@ export default function Home() {
                 </li>
 
                 <li>
-                  <a href="/" title="Add to cart">
+                  <Link href="/bag" title="Bag">
                     <i className="fa-sharp fa-solid fa-bag-shopping"></i>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </section>

@@ -1,0 +1,47 @@
+.bag-total {
+  display: grid;
+  row-gap: 38px;
+  justify-content: end;
+  width: auto;
+  text-align: left;
+  font: normal normal normal 14px/16px Playfair Display;
+  letter-spacing: 0.1px;
+  color: $brand-primary;
+  text-transform: lowercase;
+  opacity: 1;
+  margin-top: 26px;
+
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    justify-content: end;
+    align-items: center;
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+    grid-column-gap: 48px;
+    column-gap: 48px;
+    font-size: 16px;
+
+    h1 {
+      font-size: 16px;
+    }
+  }
+}
+
+.btn-order {
+  justify-self: end;
+  background: $brand-primary 0% 0% no-repeat padding-box;
+  border: 1px solid $gray-primary;
+  opacity: 1;
+  color: $white;
+  font-size: 16px;
+  padding: 12px 24px;
+
+  i {
+    margin-right: 8px;
+    height: 100%;
+    font-size: 18px;
+    margin-right: 16px;
+  }
+}

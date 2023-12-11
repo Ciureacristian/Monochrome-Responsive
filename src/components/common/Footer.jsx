@@ -1,123 +1,189 @@
 export default function Footer() {
   return (
     <>
-      <footer className="footer">
-        <div className="footer-inner container">
-          <div className="footer-contact">
-            <nav className="footer-nav">
-              <ul>
-                <li>
-                  <a href="tel:+" title="call Us">
-                    call Us
-                  </a>
-                </li>
-
-                <li>
-                  <a href="tel:+" title="mobile">
-                    +44 (0)10 2345 6789
-                  </a>
-                </li>
-
-                <li>
-                  <a href="mailto:" title="email">
-                    email costumer care
-                  </a>
-                </li>
-              </ul>
-
-              <ul>
-                <li>
-                  <a href="/" title="style & fit us">
-                    style & fit us
-                  </a>
-                </li>
-
-                <li>
-                  <a href="" title="faqs">
-                    faqs
-                  </a>
-                </li>
-
-                <li>
-                  <a href="/" title="delivery">
-                    delivery
-                  </a>
-                </li>
-                <li>
-                  <a href="/" title="exchanges & returns">
-                    exchanges & returns
-                  </a>
-                </li>
-              </ul>
-
-              <ul>
-                <li>
-                  <a href="/" title="About us">
-                    About us
-                  </a>
-                </li>
-                <li>
-                  <a href="/" title="Careers">
-                    Careers
-                  </a>
-                </li>
-                <li>
-                  <a href="/" title="Afiliates">
-                    Afiliates
-                  </a>
-                </li>
-                <li>
-                  <a href="/" title="Advertising">
-                    Advertising
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-
-          <div className="footer-connect">
-            <form className="footer-newsletter">
-              <label>sign up for newsletter</label>
-              <input
-                type="text"
-                title="Email Address"
-                placeholder="Email"
-                required
-              ></input>
-
-              <button type="submit" title="Submit">
-                Submit
-              </button>
-            </form>
-
-            <section className="social-media">
-              <ul>
-                <li>
-                  <a href="/" title="Youtube">
-                    <i className="fa-brands fa-youtube"></i>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="/" title="Twitter">
-                    <i className="fa-brands fa-twitter"></i>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="/" title="Facebook">
-                    <i className="fa-brands fa-facebook"></i>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="/" title="Instagram">
-                    <i className="fa-brands fa-instagram"></i>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </div>
+      <footer class="footer">
+        <div class="footer-inner mt-5 container">
+          <section class="footer-connect my-5 py-5 py-lg-1">
+            <div class="footer-connect-inner">
+              <form class="footer-newsletter">
+                <header class="footer-newsletter-header d-block d-lg-none">
+                  <h1 class="mb-3">Let &#x27;s connect!</h1>
+                  <p>Be the first to receive exclusives offers</p>
+                </header>
+                <div class="newsletter">
+                  <label for="email">Sign up for our newsletter</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email address"
+                    required=""
+                  />
+                </div>
+                <div class="terms">
+                  <input type="checkbox" name="terms" id="terms" required="" />
+                  <label
+                    for="terms"
+                    title="I agree with Privacy Policy and i want to receive emails from Monochrome"
+                  >
+                    I agree with
+                    <a
+                      title="Privacy Policy"
+                      class="text-decoration-underline mx-1"
+                      href="/"
+                    >
+                      Privacy Policy
+                    </a>
+                    and i want to receive emails from Monochrome
+                  </label>
+                </div>
+                <button
+                  type="submit"
+                  name="submit"
+                  id="submit"
+                  title="Sign up for our newsletter"
+                  class="button-small"
+                >
+                  Submit
+                </button>
+              </form>
+              <section class="footer-social">
+                <header class="footer-social-header d-black d-lg-none">
+                  <h1>We are highly likeable</h1>
+                </header>
+                <ul>
+                  <li>
+                    <a
+                      href="https://youtube.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Monochrome Youtube channel"
+                    >
+                      <i class="fa-brands fa-youtube-square"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://twitter.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Monochrome Twitter account"
+                    >
+                      <i class="fa-brands fa-twitter-square"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://facebook.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Monochrome Facebook account"
+                    >
+                      <i class="fa-brands fa-facebook-square"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://instagram.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Monochrome Instagram account"
+                    >
+                      <i class="fa-brands fa-instagram-square"></i>
+                    </a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </section>
+          <section class="footer-nav my-5 py-5 py-lg-1">
+            <div class="footer-nav-inner">
+              <header class="footer-nav-header d-block d-lg-none">
+                <h1>How can we help?</h1>
+              </header>
+              <div class="nav">
+                <nav>
+                  <ul>
+                    <li>
+                      <a title="About us" href="/">
+                        About us
+                      </a>
+                    </li>
+                    <li>
+                      <a title="Careers" href="/">
+                        Careers
+                      </a>
+                    </li>
+                    <li>
+                      <a title="Affiliates" href="/">
+                        Affiliates
+                      </a>
+                    </li>
+                    <li>
+                      <a title="Advertising" href="/">
+                        Advertising
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <nav>
+                  <ul>
+                    <li>
+                      <a title="Style &amp; fit advice" href="/style">
+                        Style &amp;fit advice
+                      </a>
+                    </li>
+                    <li>
+                      <a title="Faqs" href="/">
+                        Faqs
+                      </a>
+                    </li>
+                    <li>
+                      <a title="Delivery" href="/">
+                        Delivery
+                      </a>
+                    </li>
+                    <li>
+                      <a title="Exchanges &amp; returns" href="/">
+                        Exchanges &amp;returns
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="terms d-block d-lg-none">
+                <ul>
+                  <li>
+                    <a title="terms &amp; conditions" href="/">
+                      terms &amp;conditions
+                    </a>
+                  </li>
+                  <li>
+                    <a title="privacy &amp; cookies" href="/">
+                      privacy &amp;cookies
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <section class="footer-contact d-none d-lg-block">
+                <ul>
+                  <li>
+                    <a href="tel:+4401023456789" title="Call us">
+                      Call us<span>+44 (0)10 2345 6789</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:office@monochrome.com"
+                      title="Email customer care"
+                    >
+                      Email customer care
+                    </a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </section>
         </div>
       </footer>
     </>

@@ -30,17 +30,21 @@
     }
   }
 }
-@media (min-width: 768px) {
-  .header-secondary-men {
-    flex-direction: row;
-    justify-content: space-between;
+@media (max-width: 767px) {
+  .header-men {
+    .title-primary {
+      font-size: 36px;
+      margin: 20px 0;
+    }
   }
 
-  .header-connect ul {
-    flex-direction: row;
-    align-items: center;
-    gap: 26px;
-    padding-top: 22px;
-    margin-bottom: 82px;
+  .header-secondary-men {
+    flex-direction: column;
+
+    .header-connect ul {
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
   }
 }

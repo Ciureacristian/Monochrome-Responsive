@@ -1,8 +1,9 @@
-import MenPage from './MenPage';
 import Footer from '@/components/common/Footer';
-import CatalogMen from './CatalogMen';
-import Link from 'next/link';
-export default function Page() {
+import BagTotal from './bagTotal';
+import BagDetails from './bagDetails';
+import BagHelp from './bagHelp';
+
+export default function Bag() {
   return (
     <>
       <header className="header-men">
@@ -78,9 +79,9 @@ export default function Page() {
                 </li>
 
                 <li>
-                  <Link href="/bag" title="Bag">
+                  <a href="/" title="Add to cart">
                     <i className="fa-sharp fa-solid fa-bag-shopping"></i>
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </section>
@@ -133,37 +134,29 @@ export default function Page() {
           </nav>
         </div>
       </header>
-      <div className="MenPage">
-        <MenPage></MenPage>
-      </div>
 
-      <div className="CatalogMen">
-        <CatalogMen></CatalogMen>
-      </div>
+      <main className="content">
+        <section className="bag container">
+          <header className="bag-header">
+            <h1>SHOPPING BAG</h1>
+          </header>
 
-      <div className="CatalogMen">
-        <CatalogMen></CatalogMen>
-      </div>
+          <nav className="bag-details">
+            <BagDetails></BagDetails>
+          </nav>
 
-      <div className="CatalogMen">
-        <CatalogMen></CatalogMen>
-      </div>
+          <nav className="bag-total">
+            <BagTotal></BagTotal>
+          </nav>
+        </section>
+        <section className="help-bag container">
+          <BagHelp></BagHelp>
+        </section>
+      </main>
 
-      <div className="CatalogMen">
-        <CatalogMen></CatalogMen>
-      </div>
-
-      <div className="CatalogMen">
-        <CatalogMen></CatalogMen>
-      </div>
-
-      <div className="CatalogMen">
-        <CatalogMen></CatalogMen>
-      </div>
-
-      <div className="footer">
+      <footer className="footer">
         <Footer></Footer>
-      </div>
+      </footer>
     </>
   );
 }

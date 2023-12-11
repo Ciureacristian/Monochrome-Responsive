@@ -57,10 +57,10 @@
     gap: 20px;
   }
 
-  .product-tile-images {
-    grid-column: span 2;
-    width: 100%;
-  }
+  // .product-tile-images {
+  //   // grid-column: span 2;
+  //   // width: 100%;
+  // }
   .product-tile {
     display: flex;
     flex-direction: column;
@@ -75,9 +75,30 @@
   .product-tile-pricing {
     text-align: center;
   }
+
+  .product-tiles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 24px;
+    -moz-column-gap: 24px;
+    column-gap: 24px;
+  }
+  .content {
+    row-gap: 30px;
+    margin-bottom: 50px;
+  }
 }
-.product-tiles {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 10px;
+  row-gap: 10px;
+  margin-bottom: 20px;
 }
+
+// .product-tiles {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+// }

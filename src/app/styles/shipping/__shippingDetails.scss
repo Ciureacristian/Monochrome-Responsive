@@ -24,3 +24,26 @@
     padding: 24px 24px;
   }
 }
+@media (max-width: 767px) {
+  .sign-in,
+  .register {
+    margin: 0;
+  }
+
+  .sign-costumer {
+    margin: 12px;
+  }
+
+  .sign-p {
+    margin: 12px;
+  }
+
+  fieldset {
+    grid-row-gap: 16px;
+    row-gap: 12px;
+  }
+
+  .btn-sign {
+    padding: 12px 16px;
+  }
+}

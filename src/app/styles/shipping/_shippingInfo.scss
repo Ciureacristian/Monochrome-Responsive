@@ -90,3 +90,89 @@
     margin-top: 24px;
   }
 }
+
+// @media (max-width: 768px) {
+//   /* Apply styles for screens with a maximum width of 768px (e.g., mobile devices) */
+//   .shipping-info {
+//     margin-top: 24px;
+//   }
+
+//   fieldset {
+//     display: grid;
+//     justify-items: center;
+//     align-items: center;
+//     grid-row-gap: 12px;
+//     row-gap: 12px;
+//   }
+
+//   label {
+//     padding-right: 0; /* Remove right padding for labels */
+//     text-align: center; /* Center align labels */
+//   }
+
+//   input {
+//     width: 100%; /* Make inputs full width */
+//   }
+
+//   div {
+//     display: grid;
+//     grid-template-columns: 1fr; /* Change to a single column layout for mobile */
+//     -moz-column-gap: 0;
+//     column-gap: 0;
+//     width: 100%;
+//     justify-items: center; /* Center align input fields */
+//   }
+
+//   .required-fields {
+//     text-align: center; /* Center align required fields message */
+//     margin: 24px 0; /* Adjust margin for spacing */
+//   }
+
+//   .shipping-address {
+//     display: grid;
+//     grid-template-columns: 1fr; /* Change to a single column layout for mobile */
+//     justify-items: center;
+
+//     label {
+//       text-align: center; /* Center align labels */
+//     }
+
+//     input {
+//       width: 100%; /* Make inputs full width */
+//     }
+//   }
+
+//   .btn-sign {
+//     margin-top: 24px;
+//   }
+// }
+
+.shipping-info {
+  margin-top: 36px;
+}
+
+/* Add a media query for mobile devices */
+@media (max-width: 768px) {
+  .shipping-total {
+    grid-template-columns: 1fr;
+  }
+  .shipping-info fieldset {
+    grid-template-columns: 1fr; /* Change to a single column layout for mobile */
+  }
+
+  .shipping-info div {
+    grid-template-columns: 1fr; /* Change to a single column layout for mobile */
+  }
+
+  .required-fields {
+    margin: 16px 0; /* Adjust the margin for mobile */
+  }
+
+  .shipping-adress {
+    grid-template-columns: 1fr; /* Change to a single column layout for mobile */
+  }
+
+  .btn-signn {
+    margin-top: 16px; /* Adjust the margin for mobile */
+  }
+}

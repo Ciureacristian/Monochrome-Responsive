@@ -16,31 +16,6 @@ export default function ProductPresentation() {
           className="product-image"
         ></Image>
       </div>
-
-      {/* <div className="product-watch-galerry">
-        <a href="/" title="arrow-right">
-          <i className="fa-solid fa-right"></i>
-        </a>
-
-        <ul className="image-list">
-          <li>
-            <Image src={product1} alt="Thumbnail2-15"></Image>
-          </li>
-          <li>
-            <Image src={product2} alt="Thumbnail2-12"></Image>
-          </li>
-          <li>
-            <Image src={product3} alt="Thumbnail2-5"></Image>
-          </li>
-          <li>
-            <Image src={product4} alt="Thumbnail2-4"></Image>
-          </li>
-        </ul>
-
-        <a href="/" title="arrow-left">
-          <i className="fa-solid fa-left"></i>
-        </a>
-      </div> */}
     </>
   );
 }

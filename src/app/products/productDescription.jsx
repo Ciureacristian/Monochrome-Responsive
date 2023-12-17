@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import FooterDescription from './footerDescription';
 
 export default function ProductDescription() {
@@ -52,7 +53,8 @@ export default function ProductDescription() {
 
         <section className="product-cta">
           <button type="submit" name="ADDBAG" className="add-bag" id="add-bag">
-            <i class="fa-solid fa-bag-shopping"></i>ADD TO BAG
+            <i class="fa-solid fa-bag-shopping"></i>
+            <Link href="/bag">ADD TO BAG</Link>
           </button>
 
           <button

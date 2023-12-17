@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const ShippingInfo = () => {
   return (
     <>
@@ -140,9 +142,9 @@ const ShippingInfo = () => {
             </label>
           </div>
 
-          <button type="submit" className="btn-signn" title="Continue">
+          <Link href="/billing" title="Continue" className="btn-signn">
             CONTINUE
-          </button>
+          </Link>
         </fieldset>
       </form>
     </>

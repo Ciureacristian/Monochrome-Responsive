@@ -1,10 +1,12 @@
 import Footer from '@/components/common/Footer';
 import PaymentSign from '../singIn/payment';
-import ShippingInfo from './shippingInfo';
-import ShippingDetails from './shippingDetails';
 import BagHelp from '../bag/bagHelp';
+import BillingSummary from './billingSummary';
+import BillingAddress from './billingAddress';
+import BillingDelivery from './billingDelivery';
+import BillingPayment from './billingPayment';
 
-export default function Bag() {
+export default function Billing() {
   return (
     <>
       <header className="header-men">
@@ -146,18 +148,23 @@ export default function Bag() {
             <PaymentSign></PaymentSign>
           </section>
 
-          <section className="shipping-total">
-            <section className="shipping-info">
-              <ShippingInfo></ShippingInfo>
+          <section className="billing-details">
+            <section className="billing-order-summary">
+              <BillingSummary></BillingSummary>
             </section>
-
-            <article className="shipping-details">
-              <ShippingDetails></ShippingDetails>
-            </article>
+            <section className="billing-address">
+              <BillingAddress></BillingAddress>
+            </section>
+            <section className="billing-delivery">
+              <BillingDelivery></BillingDelivery>
+            </section>
+            <section className="billing-payment">
+              <BillingPayment></BillingPayment>
+            </section>
           </section>
-          <section className="help-bag container">
-            <BagHelp></BagHelp>
-          </section>
+        </section>
+        <section className="help-bag container">
+          <BagHelp></BagHelp>
         </section>
       </main>
 

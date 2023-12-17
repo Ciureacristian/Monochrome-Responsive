@@ -15,6 +15,7 @@ const BagDetails = () => {
           <li>UNIT PRICE</li>
         </ul>
       </section>
+
       <section className="bag-order">
         <article className="product-order container">
           <section className="bag-images">
@@ -26,13 +27,16 @@ const BagDetails = () => {
               ></Image>
             </a>
           </section>
+
           <section className="bag-description">
             <span>Monochrome Max Bill</span>
             <p>Max Bill Chronoscope 40mm Stainless Steel and Leather Watch</p>
           </section>
+
           <section className="bag-color">
             <p>Black</p>
           </section>
+
           <section className="bag-quantity">
             <form>
               <button
@@ -61,9 +65,11 @@ const BagDetails = () => {
               </button>
             </form>
           </section>
+
           <section className="bag-price">
             <span className="price">$2,750</span>
           </section>
+
           <section className="bag-controls">
             <button
               type="submit"

@@ -15,7 +15,9 @@ const PaymentSign = () => {
           </Link>
         </li>
         <li>
-          <a href="/">billing</a>
+          <Link href="/billing" title="billing">
+            billing
+          </Link>
         </li>
         <li>
           <a href="/">confirmation</a>

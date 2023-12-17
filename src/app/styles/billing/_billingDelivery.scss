@@ -1,0 +1,69 @@
+.billing-delivery {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-bottom: 1px solid $gray;
+  padding-bottom: 40px;
+  grid-row-gap: 24px;
+  row-gap: 24px;
+
+  .billing-delivery-header {
+    text-align: left;
+    font: normal normal bold 25px/22px Playfair Display;
+    letter-spacing: 0.13px;
+    color: $brand-primary;
+    opacity: 1;
+    border-bottom: 1px solid $gray;
+    padding-bottom: 12px;
+  }
+
+  .address-delivery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+  }
+
+  .delivery-express-header {
+    text-align: left;
+    font: normal normal bold 17px/22px Playfair Display;
+    letter-spacing: 0.09px;
+    color: $brand-primary;
+    opacity: 1;
+    margin-bottom: 12px;
+  }
+
+  .delivery-express-detail {
+    text-align: left;
+    font: normal normal normal 20px/26px Roboto;
+    letter-spacing: 0.1px;
+    color: $brand-primary;
+    opacity: 1;
+    display: grid;
+  }
+  a {
+    text-decoration: underline;
+  }
+
+  .delivery-option-address {
+    text-align: left;
+    font: normal normal normal 20px/26px Roboto;
+    letter-spacing: 0.1px;
+    color: $brand-primary;
+    opacity: 1;
+    display: grid;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 768px) {
+  .billing-delivery {
+    grid-template-columns: 1fr;
+  }
+
+  .address-delivery {
+    grid-template-columns: 1fr;
+    grid-row-gap: 12px;
+  }
+}

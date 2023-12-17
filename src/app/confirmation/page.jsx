@@ -1,12 +1,9 @@
 import Footer from '@/components/common/Footer';
 import PaymentSign from '../singIn/payment';
-import BagHelp from '../bag/bagHelp';
-import BillingSummary from './billingSummary';
-import BillingAddress from './billingAddress';
-import BillingDelivery from './billingDelivery';
-import BillingPayment from './billingPayment';
+import ConfirmOrder from './confirmOrder';
+import ConfirmPayment from './confirmPayment';
 
-export default function Billing() {
+export default function Bag() {
   return (
     <>
       <header className="header-men">
@@ -139,32 +136,33 @@ export default function Billing() {
       </header>
 
       <main className="content container">
-        <section>
+        <section className="bag container">
           <header className="bag-header">
-            <h1>Shipping</h1>
+            <h1>CONFIRM ORDER</h1>
           </header>
 
           <section className="payment-sing">
             <PaymentSign></PaymentSign>
           </section>
-
-          <section className="billing-details container">
-            <section className="billing-order-summary">
-              <BillingSummary></BillingSummary>
-            </section>
-            <section className="billing-address">
-              <BillingAddress></BillingAddress>
-            </section>
-            <section className="billing-delivery">
-              <BillingDelivery></BillingDelivery>
-            </section>
-            <section className="billing-payment">
-              <BillingPayment></BillingPayment>
-            </section>
-          </section>
         </section>
-        <section className="help-bag container">
-          <BagHelp></BagHelp>
+
+        <section className="confirm-orders">
+          <header className="confirm-orders-header">
+            <h1>Thank you for your order!</h1>
+            <p>
+              You order has been registered and our colleagues are preparing
+              your awesome watch. It will take 2-3 days until yourll have it
+              ready for your wrist.
+            </p>
+          </header>
+
+          <section className="confirm-orders-detail">
+            <ConfirmOrder></ConfirmOrder>
+          </section>
+
+          <section className="confirm-order-payment">
+            <ConfirmPayment></ConfirmPayment>
+          </section>
         </section>
       </main>
 

@@ -20,7 +20,7 @@ const BillingDelivery = () => {
         </section>
 
         <section className="delivery-option">
-          <header className="delivery-option-header">
+          <header className="delivery-express-header">
             <h2>Packaging options</h2>
           </header>
           <section className="delivery-option-address">

@@ -20,7 +20,9 @@ const PaymentSign = () => {
           </Link>
         </li>
         <li>
-          <a href="/">confirmation</a>
+          <Link href="/confirmation" title="confirmation">
+            confirmation
+          </Link>
         </li>
       </ul>
     </>

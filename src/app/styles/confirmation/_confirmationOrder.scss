@@ -1,0 +1,86 @@
+.confirm-orders-header h1 {
+  text-align: left;
+  font: normal normal bold 35px/47px Playfair Display;
+  letter-spacing: 0px;
+  color: #2b2b2b;
+  opacity: 1;
+  padding: 12px 12px;
+}
+
+.confirm-orders-header p {
+  text-align: left;
+  font: normal normal 300 25px/33px Roboto;
+  letter-spacing: 1px;
+  color: #707070;
+  opacity: 1;
+  margin: 24px 0;
+}
+
+.confirmation-header {
+  text-align: left;
+  font: normal normal bold 25px/22px Playfair Display;
+  letter-spacing: 0.13px;
+  color: #2b2b2b;
+  opacity: 1;
+  margin: 22px 0;
+}
+
+.confirm-orders-detail {
+  display: grid;
+}
+
+.order-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  grid-row-gap: 50px;
+  grid-row-gap: 50px;
+  row-gap: 50px;
+
+  .confirmation-details-ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 16px 0;
+  }
+}
+
+.confirmation-print {
+  text-align: end;
+  text-decoration: underline;
+  font: normal normal normal 18px/22px Playfair Display;
+  letter-spacing: 0.09px;
+  color: #2b2b2b;
+  text-transform: lowercase;
+  opacity: 1;
+}
+
+.confirmation-print {
+  border-top: 1px solid $gray;
+  margin: 24px 0;
+  padding: 24px 0;
+}
+
+@media (max-width: 768px) {
+  .confirm-order-payment {
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    column-gap: 0;
+  }
+
+  .confirm-payment h2,
+  .confirm-shipping header {
+    font-size: 20px;
+  }
+
+  .confirm-payment span,
+  .confirm-shipping span {
+    font-size: 16px;
+  }
+
+  .track-order {
+    padding: 10px;
+  }
+}

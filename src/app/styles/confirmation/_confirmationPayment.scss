@@ -1,0 +1,59 @@
+.confirm-order-payment {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  justify-items: start;
+  grid-column-gap: 24px;
+  column-gap: 24px;
+}
+
+.confirm-payment h2 {
+  text-align: left;
+  font: normal normal bold 25px/22px Playfair Display;
+  letter-spacing: 0.13px;
+  color: #2b2b2b;
+  opacity: 1;
+  margin-bottom: 24px;
+}
+
+.confirm-payment span {
+  text-align: left;
+  font: normal normal normal 18px/22px Playfair Display;
+  letter-spacing: 0.09px;
+  color: #2b2b2b;
+  opacity: 1;
+}
+
+.confirm-shipping {
+  header {
+    text-align: left;
+    font: normal normal bold 25px/22px Playfair Display;
+    letter-spacing: 0.13px;
+    color: #2b2b2b;
+    opacity: 1;
+    margin-bottom: 24px;
+  }
+
+  span {
+    text-align: left;
+    font: normal normal normal 18px/22px Playfair Display;
+    letter-spacing: 0.09px;
+    color: #2b2b2b;
+    opacity: 1;
+  }
+}
+
+.track-order {
+  display: grid;
+  margin: 22px 0;
+  padding: 14px;
+  font-family: Roboto, sans-serif;
+  text-transform: lowercase;
+  text-align: center;
+  cursor: pointer;
+  width: auto;
+  white-space: nowrap;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  border: 1px solid #2b2b2b;
+  background-color: transparent;
+}

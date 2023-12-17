@@ -42,15 +42,16 @@ const BillingPayment = () => {
             <input
               type="text"
               id="cardName"
-              className="input"
+              className="input-btn"
               placeholder="Enter your card name"
               required
             />
             <label htmlFor="card-number">Card number</label>
             <input
-              type="text"
+              type="number"
+              min="0"
               id="cardNumber"
-              className="input"
+              className="input-btn"
               placeholder="Enter your card number"
               required
             />
@@ -81,10 +82,14 @@ const BillingPayment = () => {
                   <option value="2028">2028</option>
                   <option value="2029">2029</option>
                 </select>
-              </div>
-              <div class="card-input">
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" placeholder="CVV"></input>
+
+                <input
+                  type="numer"
+                  id="cvv"
+                  placeholder="CVV"
+                  className="input-btn"
+                  maxLength="3"
+                ></input>
               </div>
             </div>
 

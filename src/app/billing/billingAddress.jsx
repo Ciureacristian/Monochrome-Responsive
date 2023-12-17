@@ -16,16 +16,16 @@ const BillingAddress = () => {
           <section className="shipping-address-detail">
             <span>Mr. Kill Bill</span> <span>1234 Couckoo Boulevard</span>
             <span> Quarantine Zone</span> <span>47862</span>
-            <span>Happy Country </span> <a href="/">Happy Country </a>
+            <span>Happy Country </span> <a href="/">change shipping address</a>
           </section>
         </section>
 
-        <section className="billing-address">
-          <header className="billing-address-header">
+        <section className="billing-address-section">
+          <header className="shipping-address-header">
             <h2>BILLING ADDRESS</h2>
           </header>
 
-          <section className="billing-address-detail">
+          <section className="shipping-address-detail">
             <span>Same as shipping Address</span>{' '}
             <a href="/">change billing address</a>
           </section>

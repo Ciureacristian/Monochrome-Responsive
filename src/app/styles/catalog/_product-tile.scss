@@ -52,9 +52,22 @@
   opacity: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .product-tiles-men {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-tile {
+    text-align: center;
+  }
+
+  .product-tile-images {
+    width: 100%;
+  }
+
+  .heart-btn {
+    position: static;
+    margin-top: 10px;
   }
 }
 
